@@ -1,0 +1,28 @@
+apiVersion: extensions/v1beta1
+kind: Ingress
+metadata:
+  annotations:
+    field.cattle.io/creatorId: user-fmnzd
+    field.cattle.io/ingressState: '{"a290b3JpLW1pbmFtaS9zZXJ2ZXIveGlwLmlvLy8zMDAw":"deployment:server:kotori-minami"}'
+    field.cattle.io/publicEndpoints: '[{"addresses":["10.44.17.151"],"port":80,"protocol":"HTTP","serviceName":"server:ingress-46a9c614a10def7d13aae679f31f8dc1","ingressName":"server:kotori-minami","hostname":"kotori-minami.server.10.44.17.151.xip.io","allNodes":true}]'
+  creationTimestamp: 2018-12-11T13:57:49Z
+  generation: 2
+  labels:
+    cattle.io/creator: norman
+  name: kotori-minami
+  namespace: server
+  resourceVersion: "33455"
+  selfLink: /apis/extensions/v1beta1/namespaces/server/ingresses/kotori-minami
+  uid: bea18390-fd4c-11e8-ad4a-e82aeab1ec20
+spec:
+  rules:
+  - host: kotori-minami.server.10.44.17.151.xip.io
+    http:
+      paths:
+      - backend:
+          serviceName: ingress-46a9c614a10def7d13aae679f31f8dc1
+          servicePort: 3000
+status:
+  loadBalancer:
+    ingress:
+    - ip: 10.44.17.151
