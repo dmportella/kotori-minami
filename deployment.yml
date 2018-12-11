@@ -1,19 +1,8 @@
 apiVersion: apps/v1beta2
 kind: Deployment
 metadata:
-  annotations:
-    deployment.kubernetes.io/revision: "2"
-    field.cattle.io/creatorId: user-fmnzd
-    field.cattle.io/publicEndpoints: '[{"addresses":["10.44.17.151"],"port":80,"protocol":"HTTP","serviceName":"server:ingress-46a9c614a10def7d13aae679f31f8dc1","ingressName":"server:kotori-minami","hostname":"kotori-minami.server.10.44.17.151.xip.io","allNodes":true}]'
-  creationTimestamp: 2018-12-11T11:27:47Z
-  generation: 3
-  labels:
-    cattle.io/creator: norman
-    workload.user.cattle.io/workloadselector: deployment-server-kotori-minami
   name: kotori-minami
   namespace: server
-  selfLink: /apis/apps/v1beta2/namespaces/server/deployments/kotori-minami
-  uid: c93a6794-fd37-11e8-ad4a-e82aeab1ec20
 spec:
   progressDeadlineSeconds: 600
   replicas: 1
