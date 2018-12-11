@@ -21,4 +21,6 @@ stages:
   steps:
   - applyYamlConfig:
       path: ./deployment.yml
+  - applyYamlConfig:
+      path: ./ingress.yaml
 timeout: 60
