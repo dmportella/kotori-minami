@@ -1,0 +1,19 @@
+stages:
+- name: compile
+  steps:
+  - runScriptConfig:
+      image: node:latest
+      shellScript: npm install
+  - runScriptConfig:
+      image: node:latest
+      shellScript: echo "running tests"
+  - runScriptConfig:
+      image: node:latest
+      shellScript: npm prune --production
+- name: build image
+  steps:
+  - publishImageConfig:
+      dockerfilePath: ./Dockerfile
+      buildContext: .
+      tag: dmportella/kotori-minami
+timeout: 60
