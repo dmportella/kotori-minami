@@ -17,4 +17,8 @@ stages:
       buildContext: .
       tag: dmportella/kotori-minami
       registry: 127.0.0.1:34152
+- name: deploy
+  steps:
+  - applyYamlConfig:
+      path: ./deployment.yaml
 timeout: 60
