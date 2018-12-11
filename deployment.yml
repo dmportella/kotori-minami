@@ -36,7 +36,7 @@ spec:
         workload.user.cattle.io/workloadselector: deployment-server-kotori-minami
     spec:
       containers:
-      - image: ${CICD_IMAGE}:${CICD_EXECUTION_SEQUENCE}
+      - image: 127.0.0.1:34152/dmportella/kotori-minami
         imagePullPolicy: Always
         livenessProbe:
           failureThreshold: 3

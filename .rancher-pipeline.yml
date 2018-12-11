@@ -15,7 +15,7 @@ stages:
   - publishImageConfig:
       dockerfilePath: ./dockerfile
       buildContext: .
-      tag: dmportella/kotori-minami
+      tag: dmportella/kotori-minami:${CICD_EXECUTION_SEQUENCE}
       registry: 127.0.0.1:34152
 - name: deploy
   steps:
