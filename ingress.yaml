@@ -11,7 +11,6 @@ metadata:
     cattle.io/creator: norman
   name: kotori-minami
   namespace: server
-  resourceVersion: "33455"
   selfLink: /apis/extensions/v1beta1/namespaces/server/ingresses/kotori-minami
   uid: bea18390-fd4c-11e8-ad4a-e82aeab1ec20
 spec:

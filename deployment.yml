@@ -12,7 +12,6 @@ metadata:
     workload.user.cattle.io/workloadselector: deployment-server-kotori-minami
   name: kotori-minami
   namespace: server
-  resourceVersion: "22265"
   selfLink: /apis/apps/v1beta2/namespaces/server/deployments/kotori-minami
   uid: c93a6794-fd37-11e8-ad4a-e82aeab1ec20
 spec:
