@@ -16,6 +16,5 @@ stages:
       dockerfilePath: ./dockerfile
       buildContext: .
       tag: dmportella/kotori-minami
-      pushRemote: true
       registry: 127.0.0.1:34152
 timeout: 60
